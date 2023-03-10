@@ -1,0 +1,166 @@
+/* Base CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary-btn {
+  font-size: 16px;
+  line-height: 24px;
+  color: #16132f;
+  padding: 8px 24px;
+  background: #f8931f;
+  border: 1px solid #16132f;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+/* Base CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+.navbar {
+  padding: 15px 50px;
+  background: #faedd6;
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  position: relative;
+  padding-right: 40px;
+}
+
+.logo::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 20px;
+  width: 1px;
+  height: 100%;
+  background: #000000;
+}
+
+.nav-link {
+  color: #000000;
+  padding: 0 12px !important;
+}
+
+.our-store-btn {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  width: 150px;
+  color: #16132f;
+  padding: 12px 0 !important;
+  background: #f8931f;
+  border: 1px solid #16132f;
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
+  border-radius: 4px;
+}
+
+.search-form {
+  max-width: 230px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #faedd6;
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
+  margin: 0 10px 0 20px;
+  border: 1px solid #16132f;
+  border-radius: 4px;
+}
+
+.search-form input {
+  width: 75%;
+  padding: 12px 15px;
+  background: transparent;
+  border: none;
+}
+
+.search-form input:focus {
+  outline: 0;
+}
+
+.search-form button {
+  width: 25%;
+  background: #f8931f;
+  padding: 12px;
+  border: none;
+  border-left: 1px solid #16132f;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.store-buttons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faedd6;
+  border-radius: 4px;
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
+  margin: 0 10px;
+}
+
+.search-form input::placeholder {
+  color: #16132f;
+}
+
+/* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  padding: 50px 0;
+  background: #faedd6;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  line-height: 96px;
+  color: #16132f;
+}
+
+.hero-content h1 span {
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #16132f;
+  padding: 10px 0;
+}
+
+/* Hero Section CSS End */
+
+/* Header Part CSS End */
