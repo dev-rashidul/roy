@@ -1,7 +1,7 @@
 /* Base CSS Start */
 
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
@@ -11,12 +11,14 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #faedd6;
   scroll-behavior: smooth;
 }
 
 ol,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -33,12 +35,19 @@ a {
 }
 
 .primary-btn {
+  display: block;
+  width: 145px;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
   color: #16132f;
   padding: 8px 24px;
   background: #f8931f;
   border: 1px solid #16132f;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
   box-shadow: 4px 4px 0px 0px #000000;
 }
 
@@ -50,7 +59,6 @@ a {
 
 .navbar {
   padding: 15px 50px;
-  background: #faedd6;
   border-bottom: 1px solid #000000;
 }
 
@@ -72,6 +80,11 @@ a {
 .nav-link {
   color: #000000;
   padding: 0 12px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #f8931f;
 }
 
 .our-store-btn {
@@ -79,12 +92,16 @@ a {
   font-weight: 700;
   text-align: center;
   width: 150px;
-  color: #16132f;
+  color: #16132f !important;
   padding: 12px 0 !important;
   background: #f8931f;
   border: 1px solid #16132f;
-  box-shadow: 2.5px 2.5px 0px 0px #000000;
   border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-store-btn:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
 }
 
 .search-form {
@@ -93,10 +110,14 @@ a {
   display: flex;
   align-items: center;
   background: #faedd6;
-  box-shadow: 2.5px 2.5px 0px 0px #000000;
   margin: 0 10px 0 20px;
   border: 1px solid #16132f;
   border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-form:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
 }
 
 .search-form input {
@@ -141,7 +162,6 @@ a {
 
 .hero-wrapper {
   padding: 50px 0;
-  background: #faedd6;
 }
 
 .hero-content h1 {
@@ -164,3 +184,372 @@ a {
 /* Hero Section CSS End */
 
 /* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Design Section CSS Start */
+
+.design-wrapper {
+  background: #d1e665;
+  border-width: 4px 0px;
+  border-style: solid;
+  border-color: #16132f;
+  padding: 50px 0;
+}
+
+.section-top h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #16132f;
+}
+
+.design-tab-buttons li .nav-link {
+  display: block;
+  width: 145px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #16132f;
+  padding: 8px !important;
+  margin: 0 25px;
+  background: #dadada;
+  border: 1px solid #16132f;
+  box-shadow: 4px 4px 0px 0px #000000;
+  border-radius: 0 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.design-tab-buttons li .nav-link.active {
+  color: #16132f;
+  background: #f8931f;
+}
+
+.design-card {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 2px;
+  border: 0;
+  transition: border 0.3s ease;
+}
+
+.design-card:hover {
+  border: 3px solid#16132F;
+}
+
+.design-card-img {
+  text-align: center;
+}
+
+.design-card-content h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16132f;
+  margin: 0;
+}
+
+.design-card-content span {
+  font-size: 12px;
+  color: #16132f;
+}
+
+.design-card hr {
+  border-top: 0.4px solid #16132f;
+  opacity: 1;
+}
+
+/* Design Section CSS End */
+
+/* Banner Section CSS Start */
+
+.banner-wrapper {
+  background: #16132f;
+  margin: 50px 0;
+}
+
+.banner-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+/* Banner Section CSS End */
+
+/* Trending Product Section CSS Start */
+
+.tr-product-wrapper {
+  padding-bottom: 50px;
+}
+
+.trending-product-top h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #16132f;
+}
+
+.tr-product-left-img > img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 545px;
+  max-height: 545px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.tr-product-left-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.tr-product-left-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #16132f;
+}
+
+.tr-product-left-arrow {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #f8931f;
+}
+
+.tr-product-right-img > img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.tr-product-right-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.tr-product-right-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #16132f;
+}
+
+.tr-product-right-arrow {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #f8931f;
+}
+
+/* Trending Product Section CSS End */
+
+/* New Collection Section CSS Start */
+
+.new-collection-wrapper {
+  margin-bottom: 100px !important;
+  padding: 50px 0;
+  background: #f8931f;
+  border-width: 4px 0px;
+  border-style: solid;
+  border-color: #16132f;
+}
+
+.new-collection-title h2 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 75px;
+  color: #16132f;
+  padding-bottom: 30px;
+}
+
+.new-collection-slide img {
+  max-width: 364px;
+  width: 100%;
+  min-height: 396px;
+  max-height: 396px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide.swiper-slide-active img {
+  min-height: 450px;
+  max-height: 450px;
+  height: 100%;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 31%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8931f;
+  box-shadow: 2px 2px 0 0 #000000;
+  border: 1px solid #16132f;
+  border-radius: 100%;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 35%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8931f;
+  box-shadow: 2px 2px 0 0 #000000;
+  border: 1px solid #16132f;
+  border-radius: 100%;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .new-collection-slide {
+    padding: 0 10px !important;
+  }
+
+  .swiper-button-prev {
+    left: 32.5%;
+  }
+
+  .swiper-button-next {
+    right: 32.5%;
+  }
+}
+
+/* New Collection Section CSS End */
+
+/* Main Part CSS End */
+
+/* Footer Part CSS Start */
+
+.footer-wrapper {
+  padding: 50px 0 30px;
+  border-top: 1px solid #000000;
+}
+
+.footer-menu h5 {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #16132f;
+  margin-bottom: 20px;
+}
+
+.footer-nav ul li a {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.3px;
+  color: #16132f;
+}
+
+.footer-newsletter h6 {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #16132f;
+  margin-bottom: 20px;
+}
+
+.footer-newsletter p {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #16132f;
+}
+
+.input-field {
+  width: 68%;
+}
+
+.input-field input {
+  width: 100%;
+  background: #ffffff;
+  padding: 8px 15px;
+  border: 1px solid #b3bdc7;
+  border-radius: 8px;
+}
+
+.input-field input:focus {
+  outline: 0;
+}
+
+.btn-field {
+  width: 28%;
+}
+
+.btn-field input {
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  background: #f8931f;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-social p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #16132f;
+  padding-top: 10px;
+}
+
+.social-media li {
+  padding-right: 20px;
+}
+
+.footer-wrapper hr {
+  margin: 40px 0 30px !important;
+  border-top: 1px solid #16132f;
+  opacity: 1;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #16132f;
+  margin: 0;
+}
+
+/* Footer Part CSS End */
