@@ -105,19 +105,19 @@ a {
 }
 
 .search-form {
-  max-width: 260px;
+  max-width: 300px;
   width: 100%;
   display: flex;
   align-items: center;
   background: #faedd6;
-  margin: 0 10px 0 20px;
+  margin: 0 30px 0 10px;
   border: 1px solid #16132f;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
 
 .search-form input {
-  width: 75%;
+  width: 82%;
   padding: 12px 15px;
   background: transparent;
   border: none;
@@ -128,7 +128,7 @@ a {
 }
 
 .search-form button {
-  width: 25%;
+  width: 18%;
   background: #f8931f;
   padding: 12px;
   border: none;
@@ -293,6 +293,14 @@ a {
   color: #16132f;
 }
 
+.tr-product-left {
+  transition: all 0.2s ease-in-out;
+}
+
+.tr-product-left:hover {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
 .tr-product-left-img > img {
   position: relative;
   max-width: 100%;
@@ -328,6 +336,14 @@ a {
   align-items: center;
   border-radius: 100%;
   background: #f8931f;
+}
+
+.tr-product-right img {
+  transition: all 0.2s ease-in-out;
+}
+
+.tr-product-right img:hover {
+  box-shadow: 4px 4px 0px 0px #000000;
 }
 
 .tr-product-right-img > img {
@@ -388,9 +404,15 @@ a {
   padding-bottom: 30px;
 }
 
+.new-collection-slide {
+  text-align: center;
+  margin: auto;
+}
+
 .new-collection-slide img {
   max-width: 364px;
   width: 100%;
+  margin: auto;
   min-height: 396px;
   max-height: 396px;
   height: 100%;
@@ -414,7 +436,7 @@ a {
 
 .swiper-button-prev {
   position: absolute;
-  left: 31%;
+  left: 0;
   width: 60px;
   height: 60px;
   display: flex;
@@ -428,7 +450,7 @@ a {
 
 .swiper-button-next {
   position: absolute;
-  right: 35%;
+  right: 2px;
   width: 60px;
   height: 60px;
   display: flex;
@@ -438,20 +460,6 @@ a {
   box-shadow: 2px 2px 0 0 #000000;
   border: 1px solid #16132f;
   border-radius: 100%;
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .new-collection-slide {
-    padding: 0 10px !important;
-  }
-
-  .swiper-button-prev {
-    left: 32.5%;
-  }
-
-  .swiper-button-next {
-    right: 32.5%;
-  }
 }
 
 /* New Collection Section CSS End */
@@ -557,3 +565,163 @@ a {
 }
 
 /* Footer Part CSS End */
+
+/* ==========***==========
+Login Page CSS
+==========***========== */
+
+/* Login Header Section CSS Start */
+
+.login-header-wrapper {
+  padding: 50px 90px;
+}
+
+.login-menu ul li {
+  padding: 0 15px;
+}
+
+.sign-up-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16132f;
+}
+
+.get-started-btn {
+  display: block;
+  width: 150px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 15px 0px !important;
+  background: #f8931f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.get-started-btn:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
+}
+
+/* Login Header Section CSS End */
+
+/* Login Form Section CSS Start */
+
+.login-wrapper {
+  padding: 50px 0 200px;
+}
+
+.login-container {
+  max-width: 440px;
+  width: 100%;
+  margin: auto;
+  background: #ffffff;
+  padding: 70px 50px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+}
+
+.login-container h4 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #16132f;
+}
+
+.login-container p {
+  font-size: 16px;
+  text-align: center;
+  color: #16132f;
+}
+
+.form-input-field {
+  margin-bottom: 15px;
+}
+
+.form-input-field label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #16132f;
+  padding-bottom: 10px;
+}
+
+.form-input-field input {
+  width: 100%;
+  background: #ffffff;
+  padding: 9px 15px;
+  border: 1px solid #aeaeae;
+  border-radius: 5px;
+}
+
+.form-input-field input:focus {
+  outline: 0;
+}
+
+.login-form span {
+  font-size: 12px;
+  color: #16132f;
+}
+
+.login-form span a {
+  font-weight: 700;
+  color: #16132f;
+}
+
+.form-btn-field input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0px !important;
+  margin-top: 20px;
+  background: #f8931f;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-btn-field input:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
+}
+
+.have-account-text p {
+  font-size: 12px;
+  color: #aeaeae;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.have-account-text p a {
+  font-weight: 700;
+  color: #16132f;
+}
+
+.login-shape {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.login-shape img {
+  width: 100%;
+}
+
+.login-copyright {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+.login-copyright p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Login Form Section CSS End */
