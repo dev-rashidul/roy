@@ -44,7 +44,7 @@ a {
   padding: 8px 24px;
   background: #f8931f;
   border: 1px solid #16132f;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .primary-btn:hover {
@@ -59,7 +59,7 @@ a {
 
 .navbar {
   padding: 15px 50px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .logo {
@@ -80,7 +80,7 @@ a {
 .nav-link {
   color: #000000;
   padding: 0 12px !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-link:hover {
@@ -97,7 +97,7 @@ a {
   background: #f8931f;
   border: 1px solid #16132f;
   border-radius: 4px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .our-store-btn:hover {
@@ -105,7 +105,7 @@ a {
 }
 
 .search-form {
-  max-width: 230px;
+  max-width: 260px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -113,11 +113,7 @@ a {
   margin: 0 10px 0 20px;
   border: 1px solid #16132f;
   border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.search-form:hover {
-  box-shadow: 2.5px 2.5px 0px 0px #000000;
+  transition: all 0.2s ease-in-out;
 }
 
 .search-form input {
@@ -138,6 +134,11 @@ a {
   border: none;
   border-left: 1px solid #16132f;
   border-radius: 0px 4px 4px 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-form button:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
 }
 
 .store-buttons a {
@@ -215,9 +216,12 @@ a {
   margin: 0 25px;
   background: #dadada;
   border: 1px solid #16132f;
-  box-shadow: 4px 4px 0px 0px #000000;
   border-radius: 0 !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.design-tab-buttons li .nav-link:hover {
+  box-shadow: 4px 4px 0px 0px #000000;
 }
 
 .design-tab-buttons li .nav-link.active {
@@ -230,7 +234,7 @@ a {
   padding: 20px;
   border-radius: 2px;
   border: 0;
-  transition: border 0.3s ease;
+  transition: border 0.2s ease;
 }
 
 .design-card:hover {
