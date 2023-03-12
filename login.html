@@ -22,17 +22,6 @@
         <div class="header-logo">
           <img src="assets/images/logo.svg" alt="logo" />
         </div>
-        <div class="login-menu">
-          <ul class="d-flex align-items-center">
-            <li>
-              <a href="#"
-                ><img src="assets/images/website-icon.svg" alt="website-icon"
-              /></a>
-            </li>
-            <li><a class="sign-up-btn" href="#">Sign up</a></li>
-            <li><a class="get-started-btn" href="#">Get Started</a></li>
-          </ul>
-        </div>
       </div>
     </section>
 
@@ -43,7 +32,10 @@
     <section id="Login">
       <div class="login-wrapper position-relative">
         <div class="login-container">
-          <h4>SIGN IN</h4>
+          <div class="sign-in-buttons d-flex justify-content-between px-5">
+            <li class="active">SIGN IN</li>
+            <li>SIGN UP</li>
+          </div>
           <form>
             <div class="login-form pt-3">
               <div class="form-input-field">
@@ -58,45 +50,23 @@
                 >This information wil be securely saved as per the
                 <a href="#">Terms of services & Privacy Police</a></span
               >
+              <div class="form-btn-field">
+                <input type="submit" value="Login" />
+              </div>
+              <div class="phone-login">
+                <a href="#">Login With Phone Number</a>
+              </div>
+              <div class="or">
+                <p>OR</p>
+              </div>
               <div class="google-login">
                 <a href="#">
                   <img src="assets/images/google.png" alt="google" /> Sign In
                   With Google</a
                 >
               </div>
-              <div class="otp-login">
-                <a href="#"> Sign In With OTP</a>
-              </div>
-              <div class="form-btn-field">
-                <input type="submit" value="Login" />
-              </div>
-              <div class="have-account-text">
-                <p>Don’t have an account? <a href="#">Sign up for free</a></p>
-              </div>
             </div>
           </form>
-          <!-- <form>
-            <div class="login-form pt-3">
-              <div class="form-input-field">
-                <label>Email</label>
-                <input type="email" placeholder="your email" required />
-              </div>
-              <div class="form-input-field">
-                <label>Password</label>
-                <input type="password" placeholder="password" required />
-              </div>
-              <span
-                >This information wil be securely saved as per the
-                <a href="#">Terms of services & Privacy Police</a></span
-              >
-              <div class="form-btn-field">
-                <input type="submit" value="Login" />
-              </div>
-              <div class="have-account-text">
-                <p>Don’t have an account? <a href="#">Sign up for free</a></p>
-              </div>
-            </div>
-          </form> -->
         </div>
         <div class="login-shape">
           <img src="assets/images/login-shape.png" alt="login-shape" />
@@ -109,10 +79,21 @@
 
     <!-- Login Form Section HTML End -->
 
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <!-- Bootstrap JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+      // Sign In Sign Up button active
+
+      $(document).on("click", ".sign-in-buttons li", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
   </body>
 </html>

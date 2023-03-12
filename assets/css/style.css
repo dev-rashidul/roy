@@ -289,6 +289,7 @@ a {
 .design-card hr {
   border-top: 0.4px solid #16132f;
   opacity: 1;
+  margin: 0 0 20px;
 }
 
 /* Design Section CSS End */
@@ -606,34 +607,6 @@ Login Page CSS
   padding: 50px 90px;
 }
 
-.login-menu ul li {
-  padding: 0 15px;
-}
-
-.sign-up-btn {
-  font-size: 16px;
-  font-weight: 700;
-  color: #16132f;
-}
-
-.get-started-btn {
-  display: block;
-  width: 150px;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  line-height: 24px;
-  color: #ffffff;
-  padding: 15px 0px !important;
-  background: #f8931f;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-}
-
-.get-started-btn:hover {
-  box-shadow: 2.5px 2.5px 0px 0px #000000;
-}
-
 /* Login Header Section CSS End */
 
 /* Login Form Section CSS Start */
@@ -643,7 +616,7 @@ Login Page CSS
 }
 
 .login-container {
-  max-width: 440px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   background: #ffffff;
@@ -652,11 +625,27 @@ Login Page CSS
   border-radius: 14px;
 }
 
-.login-container h4 {
-  font-size: 24px;
+.sign-in-buttons li {
+  font-size: 20px;
   font-weight: 700;
+  padding: 8px 0;
+  color: #16132f;
+  cursor: pointer;
+}
+
+.sign-in-buttons li.active {
+  display: block;
+  width: 150px;
+  font-size: 20px;
   text-align: center;
   color: #16132f;
+  background: #f8931f;
+  border: 1px solid #16132f;
+  transition: all 0.2s ease-in-out;
+}
+
+.sign-in-buttons li.active:hover {
+  box-shadow: 4px 4px 0px 0px #000000;
 }
 
 .login-container p {
@@ -698,6 +687,31 @@ Login Page CSS
   color: #16132f;
 }
 
+.or p {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.or p::before,
+.or p::after {
+  position: absolute;
+  content: "";
+  top: 31px;
+  width: 30px;
+  height: 1px;
+  background: #000000;
+}
+
+.or p::before {
+  left: 35%;
+}
+
+.or p::after {
+  right: 35%;
+}
+
 .google-login a {
   display: block;
   width: 100%;
@@ -721,7 +735,7 @@ Login Page CSS
   box-shadow: 2.5px 2.5px 0px 0px #000000;
 }
 
-.otp-login a {
+.phone-login a {
   display: block;
   width: 100%;
   font-size: 16px;
@@ -736,7 +750,7 @@ Login Page CSS
   transition: all 0.2s ease-in-out;
 }
 
-.otp-login a:hover {
+.phone-login a:hover {
   box-shadow: 2.5px 2.5px 0px 0px #f8931f;
 }
 
@@ -757,18 +771,6 @@ Login Page CSS
 
 .form-btn-field input:hover {
   box-shadow: 2.5px 2.5px 0px 0px #16132f;
-}
-
-.have-account-text p {
-  font-size: 12px;
-  color: #aeaeae;
-  padding-top: 10px;
-  margin-bottom: 0;
-}
-
-.have-account-text p a {
-  font-weight: 700;
-  color: #16132f;
 }
 
 .login-shape {
