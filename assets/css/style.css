@@ -150,8 +150,12 @@ a {
   align-items: center;
   background: #faedd6;
   border-radius: 4px;
-  box-shadow: 2.5px 2.5px 0px 0px #000000;
   margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.store-buttons a:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #000000;
 }
 
 .search-form input::placeholder {
@@ -235,7 +239,6 @@ a {
   padding: 20px;
   border-radius: 2px;
   border: 0;
-  transition: border 0.2s ease;
 }
 
 .design-card:hover {
@@ -246,11 +249,36 @@ a {
   text-align: center;
 }
 
-.design-card-content h6 {
-  font-size: 16px;
-  font-weight: 700;
+.customize-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  padding: 10px 0px;
+  margin-bottom: 10px;
   color: #16132f;
-  margin: 0;
+  border: 1px solid #16132f;
+  transition: all 0.2s ease-in-out;
+}
+
+.customize-btn span {
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+.customize-btn:hover span {
+  display: none;
+}
+
+.customize-btn:hover:before {
+  content: "Customize!";
+  color: #ffffff;
+}
+
+.customize-btn:hover {
+  background-color: #f8931f;
+  border: 1px solid #f8931f;
+  box-shadow: 4px 4px 0px 0px #000000;
 }
 
 .design-card-content span {
@@ -670,11 +698,11 @@ Login Page CSS
   color: #16132f;
 }
 
-.form-btn-field input {
+.google-login a {
   display: block;
   width: 100%;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   color: #ffffff;
   padding: 10px 0px !important;
@@ -685,8 +713,50 @@ Login Page CSS
   transition: all 0.2s ease-in-out;
 }
 
-.form-btn-field input:hover {
+.google-login a img {
+  padding-right: 10px;
+}
+
+.google-login a:hover {
   box-shadow: 2.5px 2.5px 0px 0px #000000;
+}
+
+.otp-login a {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0px !important;
+  margin-top: 20px;
+  background: #16132f;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.otp-login a:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #f8931f;
+}
+
+.form-btn-field input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #16132f;
+  padding: 10px 0px !important;
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid #f8931f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-btn-field input:hover {
+  box-shadow: 2.5px 2.5px 0px 0px #16132f;
 }
 
 .have-account-text p {
