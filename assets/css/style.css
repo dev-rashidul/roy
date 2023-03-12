@@ -625,7 +625,12 @@ Login Page CSS
   border-radius: 14px;
 }
 
+.sign-in-buttons li {
+  position: relative;
+}
+
 .sign-in-buttons li .nav-link {
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   padding: 10px 40px !important;
@@ -634,6 +639,20 @@ Login Page CSS
   background: none !important;
   border: 1px solid #16132f;
   border-radius: 0;
+}
+
+.sign-in-buttons li::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0px;
+  width: 1px;
+  height: 100%;
+  background: #16132f;
+}
+
+.sign-in-buttons li:last-child::after {
+  display: none !important;
 }
 
 .sign-in-buttons li.active .nav-link {
