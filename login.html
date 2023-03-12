@@ -32,41 +32,123 @@
     <section id="Login">
       <div class="login-wrapper position-relative">
         <div class="login-container">
-          <div class="sign-in-buttons d-flex justify-content-between px-5">
-            <li class="active">SIGN IN</li>
-            <li>SIGN UP</li>
-          </div>
-          <form>
-            <div class="login-form pt-3">
-              <div class="form-input-field">
-                <label>Email</label>
-                <input type="email" placeholder="your email" required />
-              </div>
-              <div class="form-input-field">
-                <label>Password</label>
-                <input type="password" placeholder="password" required />
-              </div>
-              <span
-                >This information wil be securely saved as per the
-                <a href="#">Terms of services & Privacy Police</a></span
-              >
-              <div class="form-btn-field">
-                <input type="submit" value="Login" />
-              </div>
-              <div class="phone-login">
-                <a href="#">Login With Phone Number</a>
-              </div>
-              <div class="or">
-                <p>OR</p>
-              </div>
-              <div class="google-login">
-                <a href="#">
-                  <img src="assets/images/google.png" alt="google" /> Sign In
-                  With Google</a
+          <div class="sign-in-buttons d-flex justify-content-between">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item active" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-sign-in-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-sign-in"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-sign-in"
+                  aria-selected="true"
                 >
-              </div>
+                  SIGN IN
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-sign-up-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-sign-up"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-sign-up"
+                  aria-selected="false"
+                >
+                  SIGN UP
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-sign-in"
+              role="tabpanel"
+              aria-labelledby="pills-sign-in-tab"
+              tabindex="0"
+            >
+              <form>
+                <div class="login-form pt-3">
+                  <div class="form-input-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="your email" required />
+                  </div>
+                  <div class="form-input-field">
+                    <label>Password</label>
+                    <input type="password" placeholder="password" required />
+                  </div>
+                  <span
+                    >This information wil be securely saved as per the
+                    <a href="#">Terms of services & Privacy Police</a></span
+                  >
+                  <div class="form-btn-field">
+                    <input type="submit" value="Login" />
+                  </div>
+                  <div class="phone-login">
+                    <a href="#">Login With Phone Number</a>
+                  </div>
+                  <div class="or">
+                    <p>OR</p>
+                  </div>
+                  <div class="google-login">
+                    <a href="#">
+                      <img src="assets/images/google.png" alt="google" /> Sign
+                      In With Google</a
+                    >
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+            <div
+              class="tab-pane fade"
+              id="pills-sign-up"
+              role="tabpanel"
+              aria-labelledby="pills-sign-up-tab"
+              tabindex="0"
+            >
+              <form>
+                <div class="login-form pt-3">
+                  <div class="form-input-field">
+                    <label>Name</label>
+                    <input type="text" placeholder="your name" required />
+                  </div>
+                  <div class="form-input-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="your email" required />
+                  </div>
+                  <div class="form-input-field">
+                    <label>Password</label>
+                    <input type="password" placeholder="password" required />
+                  </div>
+                  <div class="form-input-field">
+                    <label>Phone</label>
+                    <input type="text" placeholder="phone number" required />
+                  </div>
+                  <span
+                    >This information wil be securely saved as per the
+                    <a href="#">Terms of services & Privacy Police</a></span
+                  >
+                  <div class="form-btn-field">
+                    <input type="submit" value="Sign Up" />
+                  </div>
+                  <div class="or">
+                    <p>OR</p>
+                  </div>
+                  <div class="google-login">
+                    <a href="#">
+                      <img src="assets/images/google.png" alt="google" /> Sign
+                      In With Google</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="login-shape">
           <img src="assets/images/login-shape.png" alt="login-shape" />

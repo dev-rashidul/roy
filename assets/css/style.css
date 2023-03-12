@@ -625,26 +625,26 @@ Login Page CSS
   border-radius: 14px;
 }
 
-.sign-in-buttons li {
+.sign-in-buttons li .nav-link {
   font-size: 20px;
   font-weight: 700;
-  padding: 8px 0;
-  color: #16132f;
-  cursor: pointer;
+  padding: 10px 40px !important;
+  margin: 0 20px;
+  color: #16132f !important;
+  background: none !important;
+  border: 1px solid #16132f;
+  border-radius: 0;
 }
 
-.sign-in-buttons li.active {
-  display: block;
-  width: 150px;
+.sign-in-buttons li.active .nav-link {
   font-size: 20px;
-  text-align: center;
   color: #16132f;
-  background: #f8931f;
+  background: #f8931f !important;
   border: 1px solid #16132f;
   transition: all 0.2s ease-in-out;
 }
 
-.sign-in-buttons li.active:hover {
+.sign-in-buttons li.active .nav-link:hover {
   box-shadow: 4px 4px 0px 0px #000000;
 }
 
